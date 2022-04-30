@@ -1,0 +1,129 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.showman{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.showman video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.titulo{
+    width: 100%;
+    height: 100%;
+    background-color:#000000;
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: multiply;
+    margin-top: 25px;
+}
+.pai{
+    display: grid;
+    place-items: center;
+}
+
+.imc {
+    margin-top: 80px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 15px;
+    text-align: center;
+    width: 600px;
+    height: 800px;
+    display: grid;
+    place-items: center;
+    
+}
+.imc h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: -apple-system;
+}
+.imc h1{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.719);
+    font-size: 45px;
+    font-family: -apple-system;
+    margin: 25px;
+    padding: 5px;
+}
+.imc input{
+    width: 200px;
+    height: 30px;
+    color: black;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.main_div {
+    --color: #ff0101;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+   }
+   
+   .main_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div button {
+    padding: 0.7em 2em;
+    font-family: -apple-system;
+    font-size: 25px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+   }
+   .imc p{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: -apple-system;
+    margin-top: 5px;
+    padding: 5px;
+   }
